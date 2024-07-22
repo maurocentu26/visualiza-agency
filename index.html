@@ -11,10 +11,6 @@
    <header class="header flex">
       <div class="header__logo">
          <img src="assets/grafs.png" alt="Grafico para el logo de VISUALIZA" class="logo__graph">
-         <div class="logo__text flex">
-            <span class="logo__main-text">Visualiza</span>
-            <span class="logo__secondary-text">Agency</span>
-         </div>
       </div>
       <button class="header__button" id="show-menu">
          <i class="fa-solid fa-bars"></i>
@@ -26,9 +22,9 @@
          <ul class="nav__ul flex">
             <div class="nav__links-container flex">
                <li class="nav__item active"><a href="#home" class="nav__link"><i class="fa-solid fa-house"></i>Inicio</a></li>
-               <li class="nav__item"><a href="#desarrollo-web" class="nav__link"><i class="fa-solid fa-code"></i>Desarrollo web</a></li>
-               <li class="nav__item"><a href="#edicion-multimedia" class="nav__link"><i class="fa-solid fa-photo-film"></i>Edición multimedia</a></li>
-               <li class="nav__item"><a href="#" class="nav__link"><i class="fa-solid fa-phone"></i>Contacto</a></li>
+               <li class="nav__item"><a href="#intro" class="nav__link"><i class="fa-solid fa-code"></i>Introducción</a></li>
+               <li class="nav__item"><a href="#servicios" class="nav__link"><i class="fa-solid fa-photo-film"></i>Servicios</a></li>
+               <li class="nav__item"><a href="#nosotros" class="nav__link"><i class="fa-solid fa-phone"></i>¿Por qué elegirnos?</a></li>
                <li class="nav__item"><a href="#" class="nav__link">Cursos</a></li>
             </div>
          </ul>
@@ -37,88 +33,129 @@
    <main class="main flex" id="main">
       <section class="home flex" id="home">
          <div class="home__background">
-            <img src="assets/add-ons/squares.png" alt="" srcset="" class="first">
             <img src="assets/add-ons/squares.png" alt="" srcset="" class="second">
+            <div class="first cont"></div>
+            <img src="assets/add-ons/mancha-bg.png" alt="" class="mancha fst">
          </div>
          <div class="home__text flex">
             <div class="home__titles flex">
                <h1 class="home__title section__title">
-                  AGENCIA PUBLICIDAD
+                  AGENCIA PUBLICITARIA
                </h1>
                <h2 class="home__subtitle section__subtitle">
                   A TU ALCANCE
                </h2>
             </div>
+            <a href="#desarrollo-web" class="big__button home__button fa-beat" style="--fa-beat-scale: 1.05; --fa-beat-duration: 2s;">EXPÁNDETE</a>
             <p class="home__paragraph flex">
                <span class="paragraph__highlight">¿Querés que tu marca brille? <br></span> Destacá en un mercado saturado con nuestra ayuda.<br>Descubrí con nosotros el potencial de tu proyecto.
             </p>
          </div>
-         <a href="#desarrollo-web" class="big__button home__button fa-beat" style="--fa-beat-scale: 1.05; --fa-beat-duration: 2s;">DESCÚBRELO</a>
+         <a href="#desarrollo-web" class="big__button home__button fa-beat discover" style="--fa-beat-scale: 1.05; --fa-beat-duration: 2s;">DESCÚBRELO</a>
          <i class="fa-solid fa-angle-down fa-2xl fa-bounce" style="color: #274073; --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1;
          --fa-bounce-duration: 2s;"></i>
       </section>
-      <section class="flex webdev" id="desarrollo-web">
-        <h1 class="webdev__title section__title">
-            DESARROLLO WEB
+      <section class="intro flex" id="intro">
+        <img src="assets/add-ons/large-squares.png" alt="" srcset="" class="squares">
+        <div class="intro__img">
+            <i class="fa-solid fa-arrow-turn-down down-arrow" style="color: #ffffff;"></i>
+            <div class="img__container">
+                <div class="img__container-box">
+                    <img src="assets/images/co-working.webp" alt="co-working" class="img__co-working">
+                    <img src="assets/add-ons/mancha-bg.png" alt="" class="mancha snd">
+                </div>
+                <div class="img-blur"></div>
+            </div>
+        </div>
+        <div class="intro__card flex">
+            <h2 class="card__title">¿No sabes qué servicio te conviene más?</h2>
+            <p class="card__paragraph">
+                Ofrecemos un <span class="paragraph__highlight">diagnóstico</span> sin cargo del estado actual de tu empresa/negocio, determinando que servicio se amolda a tus necesidades.
+            </p>
+        </div>
+      </section>
+      <section class="flex services" id="servicios">
+        <h1 class="section__title services__title">
+            SERVICIOS
         </h1>
-        <div class="webdev__card-container flex">
-            <div class="webdev__card flex">
-                <div class="card__text flex">
-                    <span class="title__number">01</span>
-                    <h2 class="card__title">
-                        Sitio web a medida
-                        <br>
-                        <span class="separator"></span>
-                    </h2>
-                    <p class="card__paragraph">Desarrollamos sitios web únicos y personalizados que se adaptan a la identidad de tu marca y a las necesidades específicas de tu negocio.</p>
+        <p class="services__paragraph">
+            Transformamos tu presencia digital en éxito con creatividad e innovación. <br>¡Elegí Visualiza y destacá!
+        </p>
+        <div class="services__selection">
+            <div class="selection__card">
+                <h2 class="card__title">
+                    Estrategias de Marketing Personalizadas
+                </h2>
+                <img src="assets/images/marketing-graph.png" alt="marketing graph" class="card__img">
+            </div>
+            <div class="selection__card">
+                <h2 class="card__title">
+                    Creación de Contenido Completo y Atractivo
+                </h2>
+                <img src="assets/images/content-creation-graph.png" alt="content creation graph" class="card__img">
+            </div>
+            <div class="selection__card">
+                <h2 class="card__title">
+                    Páginas Web Personalizadas y Diseño Gráfico
+                </h2>
+                <img src="assets/images/web-programing-graph.png" alt="web programing graph" class="card__img">
+            </div>
+        </div>
+      </section>
+      <section class="nosotros flex" id="nosotros">
+        <div class="nosotros__slider flex slider">
+            <div class="slider__elements flex">
+                <div class="slider__element">
+                    <i class="fa-solid fa-laptop element__svg"></i>
+                    <span class="element__text">WEB DEV</span>
+                </div>
+                <div class="slider__element">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span class="element__text">SEO</span>
+                </div>
+                <div class="slider__element">
+                    <i class="fa-solid fa-photo-film"></i>
+                    <span class="element__text">CONTENT</span>
                 </div>
             </div>
-            <div class="webdev__card flex">
-                <div class="card__text flex">
-                    <span class="title__number">02</span>
-                    <h2 class="card__title">Diseño atractivo y funcional
-                        <br>
-                        <span class="separator"></span>
-                    </h2>
-                    <p class="card__paragraph">Combinamos un diseño visualmente atractivo con una funcionalidad intuitiva para ofrecer una experiencia de usuario excepcional.</p>
+            <div class="slider__elements flex">
+                <div class="slider__element">
+                    <i class="fa-solid fa-laptop element__svg"></i>
+                    <span class="element__text">WEB DEV</span>
                 </div>
-            </div>
-            <div class="webdev__card flex">
-                <div class="card__text flex">
-                    <span class="title__number">03</span>
-                    <h2 class="card__title">Desarrollo moderno
-                        <br>
-                        <span class="separator"></span>
-                    </h2>
-                    <p class="card__paragraph">Implementamos las últimas tecnologías y tendencias del desarrollo web para garantizar un sitio web moderno, seguro y escalable.</p>
+                <div class="slider__element">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span class="element__text">SEO</span>
                 </div>
-            </div>
-            <div class="webdev__card flex">
-                <div class="card__text flex">
-                    <span class="title__number">04</span>
-                    <h2 class="card__title">Optimización SEO
-                        <br>
-                        <span class="separator"></span>
-                    </h2>
-                    <p class="card__paragraph">Posicionamos tu sitio web en los primeros lugares de los resultados de búsqueda para aumentar tu visibilidad online y atraer tráfico orgánico.</p>
-                </div>
-            </div>
-            <div class="webdev__card flex">
-                <div class="card__text flex">
-                    <span class="title__number">05</span>
-                    <h2 class="card__title">Mantenimiento y soporte continuo
-                        <br>
-                        <span class="separator"></span>
-                    </h2>
-                    <p class="card__paragraph">Te ofrecemos un servicio completo de mantenimiento y soporte técnico para garantizar el funcionamiento de tu sitio web a largo plazo.</p>
+                <div class="slider__element">
+                    <i class="fa-solid fa-photo-film"></i>
+                    <span class="element__text">CONTENT</span>
                 </div>
             </div>
         </div>
       </section>
-      <section class="flex multimedia" id="edicion-multimedia">
-         
-      </section>
+      <footer class="footer flex">
+        <div class="footer__logo flex">
+            <img src="assets/grafs.png" alt="Graph for VISUALIZA logo" class="logo__img">
+            <h2 class="logo__text">VISUALIZA</h2>
+        </div>
+        <div class="footer__social flex">
+            <h3 class="social__title">¡Seguinos!</h3>
+            <div class="social__logos flex">
+                <a href="#">
+                    <i class="fa-brands fa-facebook social__logo"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram social__logo"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp social__logo"></i>
+                </a>
+            </div>
+        </div>
+      </footer>
    </main>
    <script defer src="js/app.js"></script>
+   <script defer src="js/background.js"></script>
 </body>
 </html>
