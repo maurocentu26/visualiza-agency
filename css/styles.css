@@ -16,10 +16,12 @@
    --marine-blue: #274073;
    --yellow: #EEFB03;
    --purple: #381f69;
+   --light-purple-1: #5E17EB;
    --gray: #2e2e2e;
    --medium-purple: #4f3486;
    --light-purple: #7e69a8;
    --new-purple: #8C52FF;
+   --medium-light-purple: #E7D8FF;
 }
 
 body {
@@ -41,7 +43,8 @@ li { list-style: none; }
 
 h1 { font-size: 2.625rem; }
 p { color: #fff;  }
-p span.paragraph__highlight { font-weight: 700; }
+p span.paragraph__highlight,
+.text__highlight { font-weight: 700; }
 
 a,
 button
@@ -248,17 +251,17 @@ a.discover {
     z-index: -1;
 }
 
-.intro__img {
+.section__img {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
     gap: 2rem;
 }
-.intro__img .img__container {
+.section__img .img__container {
     position: relative;
 }
-.intro__img .img__container .img-blur {
+.section__img .img__container .img-blur {
     content: "";
     position: absolute;
     width: 100%;
@@ -274,12 +277,12 @@ a.discover {
     border-radius: 1rem;
 }
 
-.intro__img .down-arrow {
+.section__img .down-arrow {
     position: unset;
     color: #fff;
     font-size: 3rem;
 }
-.intro__img img {
+.section__img img {
     min-width: 10rem;
     max-width: 20rem;
     width: 100%;
@@ -344,8 +347,14 @@ a.discover {
 }
 /* End Services settings */
 /* About us settings */
+.nosotros {
+    gap: 2rem;
+    padding: unset;
+}
+
 .slider {
     overflow: hidden;
+    margin-top: 3rem;
 }
 
 .nosotros__slider {
@@ -369,6 +378,43 @@ a.discover {
     border-radius: .5rem;
     font-weight: 600;
 }
+
+.nosotros__text {
+    background-color: var(--medium-light-purple);
+    border-radius: 2rem;
+    width: 100vw;
+    flex-direction: column;
+    gap: 2rem;
+}
+.nosotros__title { color: var(--gray); font-weight: 700; text-align: center; margin-top: 1rem;}
+.nosotros__title .text__highlight { color: var(--light-purple-1); }
+
+.nosotros__strats {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.strat__element .img__container {
+    min-width: 4rem;
+    height: 4rem;
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.strat__element img {
+    width: 65%;
+    height: 65%;
+    object-fit: cover;
+}
+.strat__element {
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.strat__title { color: #000; font-weight: 600;}
+.strat__paragraph { color: #000; }
 /* End About us settings */
 /* Footer settings */
 .footer {
