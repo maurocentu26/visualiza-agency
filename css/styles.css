@@ -396,6 +396,7 @@ a.discover {
 
 .strat__element .img__container {
     min-width: 4rem;
+    max-width: 4rem;
     height: 4rem;
     background-color: #fff;
     border-radius: 100%;
