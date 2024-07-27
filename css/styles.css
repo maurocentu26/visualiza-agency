@@ -365,12 +365,12 @@ a.discover {
 .slider__elements {
     align-items: center;
     height: 100%;
-    text-wrap: nowrap;
     animation: 5.5s slide linear infinite;
 }
 
 .nosotros__slider .slider__element {
     margin: 0 1rem;
+    text-wrap: nowrap;
 }
 .nosotros__slider .element__text{
     color: #000;
