@@ -47,6 +47,16 @@ p { color: #fff;  }
 p span.paragraph__highlight,
 .text__highlight { font-weight: 700; }
 
+.section__separator {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: .3rem;
+    background-color: var(--yellow);
+    margin-left: -1rem;
+    bottom: 0;
+}
+
 a,
 button
 { outline: none; background: none; text-decoration: none; color: #fff;; border: none; cursor: pointer;}
@@ -370,7 +380,10 @@ a.discover {
 
 .nosotros__slider .slider__element {
     margin: 0 1rem;
-    text-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: .5rem;
 }
 .nosotros__slider .element__text{
     color: #000;
