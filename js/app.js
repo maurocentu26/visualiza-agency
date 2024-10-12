@@ -1,6 +1,9 @@
-// HTML Buttons
+// HTML Elements
 const showMenuBtn = document.querySelector("#show-menu");
 const closeMenuBtn = document.querySelector("#close-menu");
+const servicesCards = document.querySelector("#servicios .services__selection");
+
+
 
 // HTML Elements
 const navMenuContainer = document.querySelector("#nav-menu");
@@ -19,6 +22,15 @@ function eventListeners() {
          link.parentElement.classList.add("active");
          closeNavMenu();
       });
+   });
+   servicesCards.addEventListener("click", (e) => {
+      if (e.target.classList.contains("service__button")) {
+        const target = e.target.dataset.target;
+        const targetElement = document.querySelector(`#${target}`);
+        targetElement.classList.toggle("active");
+        const textBtn = targetElement.classList.contains("active") ? "Ver menos" : "Ver más";
+        e.target.textContent = textBtn;
+      }
    });
 }
 

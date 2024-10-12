@@ -9,6 +9,29 @@
 </head>
 <body>
    <header class="header flex">
+<<<<<<< HEAD
+        <div class="header__container flex">
+            <div class="header__logo">
+                <img src="assets/grafs.png" alt="Grafico para el logo de VISUALIZA" class="logo__graph">
+             </div>
+             <button class="header__button" id="show-menu">
+                <i class="fa-solid fa-bars"></i>
+             </button>
+             <nav class="header__nav" id="nav-menu">
+                <button class="header__button" id="close-menu">
+                   <i class="fa-solid fa-x"></i>
+                </button>
+                <ul class="nav__ul flex">
+                   <div class="nav__links-container flex">
+                      <li class="nav__item active"><a href="#home" class="nav__link"><i class="nav-icon fa-solid fa-house"></i>Inicio</a></li>
+                      <li class="nav__item"><a href="#intro" class="nav__link"><i class="nav-icon fa-solid fa-code"></i>Conocénos</a></li>
+                      <li class="nav__item"><a href="#servicios" class="nav__link"><i class="nav-icon fa-solid fa-photo-film"></i>Servicios</a></li>
+                      <li class="nav__item"><a href="#contact-us" class="nav__link"><i class="nav-icon fa-solid fa-phone"></i>Contacto</a></li>
+                   </div>
+                </ul>
+             </nav>
+        </div>
+=======
       <div class="header__logo">
          <img src="assets/grafs.png" alt="Grafico para el logo de VISUALIZA" class="logo__graph">
       </div>
@@ -28,6 +51,7 @@
             </div>
          </ul>
       </nav>
+>>>>>>> refs/remotes/origin/main
    </header>
    <main class="main flex" id="main">
       <section class="home flex" id="home">
@@ -45,7 +69,11 @@
                   A TU ALCANCE
                </h2>
             </div>
+<<<<<<< HEAD
+            <a href="#nosotros" class="big__button home__button fa-beat" style="--fa-beat-scale: 1.05; --fa-beat-duration: 2s;">EXPÁNDETE</a>
+=======
             <a href="#contact-us" class="big__button home__button fa-beat" style="--fa-beat-scale: 1.05; --fa-beat-duration: 2s;">EXPÁNDETE</a>
+>>>>>>> refs/remotes/origin/main
             <p class="home__paragraph flex">
                <span class="paragraph__highlight">¿Querés que tu marca brille? <br></span> Destacá en un mercado saturado con nuestra ayuda.<br>Descubrí con nosotros el potencial de tu proyecto.
             </p>
@@ -57,7 +85,11 @@
       <section class="intro flex" id="intro">
         <img src="assets/add-ons/large-squares.png" alt="" srcset="" class="squares">
         <div class="intro__img section__img">
+<<<<<<< HEAD
+            <img src="assets/images/wing.png" alt="" class="down-arrow">
+=======
             <i class="fa-solid fa-arrow-turn-down down-arrow" style="color: #ffffff;"></i>
+>>>>>>> refs/remotes/origin/main
             <div class="img__container">
                 <div class="img__container-box">
                     <img src="assets/images/co-working.webp" alt="co-working" class="img__co-working">
@@ -73,6 +105,65 @@
             </p>
         </div>
         <div class="section__separator"></div>
+<<<<<<< HEAD
+      </section>
+      <section class="flex services" id="servicios">
+        <h1 class="section__title services__title">
+            SERVICIOS
+        </h1>
+        <p class="services__paragraph">
+            Transformamos tu presencia digital en éxito con creatividad e innovación. <br>¡Elegí Visualiza y destacá!
+        </p>
+        <div class="services__selection">
+            <div class="selection__card">
+                <h2 class="card__title">
+                    Estrategias de Marketing Personalizadas
+                </h2>
+                <div class="service__description" id="marketing-description">
+                    <p class="description__paragraph">
+                        El servicio de desarrollo de embudos de ventas de Visualiza está enfocado en transformar el interés de los seguidores en Instagram en clientes reales, mediante un proceso estratégico que guía a cada potencial cliente desde que conoce la marca hasta que realiza una compra. <br> <br>
+                        <span class="paragraph__highlight">Se divide en 4 etapas:</span>
+                        <ul class="description__ul">
+                            <li class="description__li">Atracción</li>
+                            <li class="description__li">Nutrición</li>
+                            <li class="description__li">Conversión</li>
+                            <li class="description__li">Fidelización</li>
+                        </ul>
+                    </p>
+                </div>
+                <button class="service__button" data-target="marketing-description">Ver más</button>
+                <img src="assets/images/marketing-graph.png" alt="marketing graph" class="card__img mark-img">
+                <!-- <button class="service__button" id="service_button" data-id="marketing">Ver más</button> -->
+            </div>
+            <div class="selection__card">
+                <h2 class="card__title">
+                    Creación de Contenido Completo y Atractivo
+                </h2>
+                <div class="service__description" id="content-description">
+                    <p class="description__paragraph">
+                        El servicio de creación de contenido de Visualiza está diseñado para captar la atención de la audiencia y fomentar el engagement en redes sociales, especialmente en Instagram. Se enfoca en generar contenido visual, atractivo y creativo. Incorporando la optimizacion del perfil.
+                    </p>
+                </div>
+                <button class="service__button" data-target="content-description">Ver más</button>
+                <img src="assets/images/content-creation-graph.png" alt="content creation graph" class="card__img">
+                <!-- <button class="service__button" id="service_button" data-id="contenido-contenido">Ver más</button> -->
+            </div>
+            <div class="selection__card">
+                <h2 class="card__title">
+                    Páginas Web Personalizadas y Diseño Gráfico
+                </h2>
+                <img src="assets/images/web-programing-graph.png" alt="web programing graph" class="card__img">
+                <div class="service__description" id="web-description">
+                    <p class="description__paragraph">
+                        El servicio de desarrollo web de Visualiza está enfocado en crear sitios web atractivos, funcionales y optimizados para SEO. Se enfoca en la creación de una página web personalizada, que refleje la identidad de la marca y que sea fácil de navegar.
+                    </p>
+                </div>
+                <button class="service__button" data-target="web-description">Ver más</button>
+                <!-- <button class="service__button" id="service_button" data-id="desarrollo-web">Ver más</button> -->
+            </div>
+        </div>
+      </section>
+=======
       </section>
       <section class="flex services" id="servicios">
         <h1 class="section__title services__title">
@@ -102,6 +193,7 @@
             </div>
         </div>
       </section>
+>>>>>>> refs/remotes/origin/main
       <section class="nosotros flex" id="nosotros">
         <div class="nosotros__slider flex slider">
             <div class="slider__elements flex">
@@ -140,7 +232,11 @@
                 </div>
                 <div class="img-blur"></div>
             </div>
+<<<<<<< HEAD
+            <img src="assets/images/wing.png" alt="" class="down-arrow">
+=======
             <i class="fa-solid fa-arrow-turn-down down-arrow" style="color: #ffffff;"></i>
+>>>>>>> refs/remotes/origin/main
         </div>
         <div class="nosotros__text flex">
             <h2 class="nosotros__title">¿Por qué elegir a <br><span class="text__highlight">Visualiza</span>?</h2>
@@ -204,6 +300,28 @@
                     conseguir nuevos clientes e incrementar ventas.
                 </span>
             </p>
+<<<<<<< HEAD
+            <form method="POST" class="contact__form">
+                <div class="form__group">
+                    <label for="name" class="form__label required">Nombre y Apellido</label>
+                    <input type="text" id="name" class="form__input" placeholder="Nombre" name="Nombre y Apellido"  required>
+                </div>
+                <div class="form__group">
+                    <label for="email" class="form__label required">Email</label>
+                    <input type="email" id="email" class="form__input" placeholder="Email" name="Email" required>
+                </div>
+                <div class="form__group">
+                    <label for="phone" class="form__label required">Teléfono</label>
+                    <input type="tel" id="phone" class="form__input" placeholder="Teléfono" name="Teléfono" required>
+                </div>
+                <div class="form__group">
+                    <label for="webpage" class="form__label">Página web</label>
+                    <input type="text" id="webpage" class="form__input" placeholder="Página Web" name="Página Web">
+                </div>
+                <div class="form__group">
+                    <label for="message" class="form__label required">Mensaje</label>
+                    <input type="text" id="message" class="form__input" placeholder="Mensaje" name="Mensaje" required></input>
+=======
             <form action="" class="contact__form">
                 <div class="form__group">
                     <label for="name" class="form__label required">Nombre y Apellido</label>
@@ -224,6 +342,7 @@
                 <div class="form__group">
                     <label for="message" class="form__label required">Mensaje</label>
                     <input type="text" id="message" class="form__input" placeholder="Mensaje" required></input>
+>>>>>>> refs/remotes/origin/main
                 </div>
                 <button type="submit" class="big__button form__button">ENVIAR</button>
             </form>
@@ -276,5 +395,6 @@
       </footer>
    </main>
    <script defer src="js/app.js"></script>
+   <script defer src="js/form.js"></script>
 </body>
 </html>

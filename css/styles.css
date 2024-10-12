@@ -92,11 +92,19 @@ main > section {
 .header {
    background-color: var(--purple);
    border-bottom: 3px solid #EEFB03;
-   padding: .3rem 1rem;
    z-index: 6;
    position: fixed;
    width: 100%;
-   justify-content: space-between;
+   justify-content: center;
+   align-items: center;
+}
+.header__container {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 65rem;
+    gap: 1rem;
+    padding: .3rem 1rem;
 }
 
 .header__logo {
@@ -141,11 +149,12 @@ main > section {
 }
 .nav__item.active {
    border-bottom: 2px solid var(--yellow);
-   padding: .5rem 0;
+   padding: 0 0 .5rem 0;
 }
 .nav__item.active a { color: var(--yellow); }
 .nav__link {
    color: #fff;
+   text-transform: uppercase;
    z-index: 0;
    font-size: 1.1rem;
 }
@@ -237,7 +246,7 @@ a.discover {
 }
 
 .down__arrow {
-   position: absolute;
+    position: absolute;
 }
 /* End home settings */
 /* Intro settings */
@@ -267,7 +276,10 @@ a.discover {
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
+<<<<<<< HEAD
+=======
     gap: 2rem;
+>>>>>>> refs/remotes/origin/main
 }
 .section__img .img__container {
     position: relative;
@@ -291,10 +303,22 @@ a.discover {
 .section__img .down-arrow {
     position: unset;
     color: #fff;
+<<<<<<< HEAD
+    filter: invert(1);
+    transform: rotate(270deg);
+    min-width: unset;
+    width: 8rem;
+    height: auto;
+    
+}
+.section__img img {
+    min-width: 13rem;
+=======
     font-size: 3rem;
 }
 .section__img img {
     min-width: 10rem;
+>>>>>>> refs/remotes/origin/main
     max-width: 20rem;
     width: 100%;
     height: 100%;
@@ -343,7 +367,11 @@ a.discover {
 .selection__card {
     position: relative;
     border-radius: 1rem;
+<<<<<<< HEAD
+    min-height: 13rem;
+=======
     height: 13rem;
+>>>>>>> refs/remotes/origin/main
     background-color: var(--medium-purple);
 }
 
@@ -358,6 +386,48 @@ a.discover {
     font-size: 1.2rem;
     margin: .5rem .5rem 0;
 }
+<<<<<<< HEAD
+
+.service__button {
+    background-color: var(--yellow);
+    color: #000;    
+    font-weight: 800;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    max-width: 10rem;
+    margin: 6.5rem 1rem 0;
+}
+
+.service__description {
+    padding: .5rem;
+    /* margin-top: 4.5rem; */
+    margin-bottom: 1rem;
+    display: none;
+}
+.service__description.active {
+    display: block;
+}
+
+.service__button {
+    background-color: var(--yellow);
+    color: #000;
+    font-weight: 800;
+    padding: .8rem 1rem;
+    border-radius: 1rem;
+    max-width: 10rem;
+    margin: 3rem 1rem 1rem;
+}
+
+.description__ul li {
+    list-style: unset;
+    color: #fff;
+    font-weight: 800;
+}
+.description__ul {
+    margin-left: 2rem;
+}
+=======
+>>>>>>> refs/remotes/origin/main
 /* End Services settings */
 /* About us settings */
 .nosotros {
@@ -385,7 +455,10 @@ a.discover {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+<<<<<<< HEAD
+=======
     gap: .5rem;
+>>>>>>> refs/remotes/origin/main
 }
 .nosotros__slider .element__text{
     color: #000;
@@ -393,6 +466,10 @@ a.discover {
     padding: .5rem;
     border-radius: .5rem;
     font-weight: 600;
+<<<<<<< HEAD
+    margin-left: .5rem;
+=======
+>>>>>>> refs/remotes/origin/main
 }
 
 .nosotros__text {
@@ -458,6 +535,7 @@ a.discover {
 
 .contact__paragraph {
     color: #000;
+<<<<<<< HEAD
 }
 
 .contact__form {
@@ -559,3 +637,120 @@ a.discover {
     0% {transform: translateX(0)}
     100% {transform: translateX(-100%)}
 }
+
+@media (min-width: 820px) {
+    .header { height: 5.5rem; }
+    .header__nav { display: flex; }
+    .nav__links-container { flex-direction: row; }     
+    
+    .header__button,
+    .header__nav::after,
+    .nav-icon {
+        display: none !important;
+    }
+
+
+}
+=======
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.form__input {
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    background-color: var(--medium-white);
+    padding: 1rem;
+    position: relative;
+}
+
+.form__button {
+    font-weight: 800;
+    letter-spacing: .1rem;
+    background-color: var(--light-purple-1);
+    width: 100%;
+    padding: .7rem;
+    font-size: 1.1rem;
+}
+
+.form__label.required::after {
+    content: " *";
+    color: red;
+}
+/* End Contact settings */
+/* Footer settings */
+.footer {
+    background-color: var(--purple);
+    width: 100vh;
+    padding: 1rem;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.footer__logo {
+    align-items: center;
+    gap: .5rem;
+}
+.footer .logo__img {
+    width: 5rem;
+}
+.footer .logo__text {
+    font-weight: 600;
+}
+
+.footer__social {
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer .social__title {
+    font-weight: 600;
+}
+.footer .social__logos {
+    gap: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #fff;
+}
+.footer__contact .contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.contact__element .contact-logo { 
+    font-size: 1.3rem; 
+    width: 2rem;
+    height: 2rem;
+    display: flex;    
+    justify-content: center;
+}
+.contact__location .contact-logo { color: red; }
+
+.footer__contact .contact__element {
+    display: flex;
+    gap: .5rem;
+}
+/* End Footer settings */
+/* Keyframes settings */
+@keyframes slide {
+    0% {transform: translateX(0)}
+    100% {transform: translateX(-100%)}
+}
+>>>>>>> refs/remotes/origin/main
