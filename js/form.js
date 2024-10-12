@@ -5,7 +5,7 @@ const form = document.querySelector('form');
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, {
-            // mode: 'no-cors',
+            mode: 'no-cors',
             redirect: 'follow',
             method: 'POST', 
             body: new FormData(form),
