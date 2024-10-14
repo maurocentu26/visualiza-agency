@@ -234,7 +234,7 @@
                     conseguir nuevos clientes e incrementar ventas.
                 </span>
             </p>
-            <form method="POST" class="contact__form">
+            <form method="POST" class="contact__form" name="form-submit">
                 <div class="form__group">
                     <label for="name" class="form__label required">Nombre y Apellido</label>
                     <input type="text" id="name" class="form__input" placeholder="Nombre" name="Nombre y Apellido"  required>
@@ -253,7 +253,8 @@
                 </div>
                 <div class="form__group">
                     <label for="message" class="form__label required">Mensaje</label>
-                    <input type="text" id="message" class="form__input" placeholder="Mensaje" name="Mensaje" required></input>
+                    <input type="text" id="message" class="form__input" placeholder="Mensaje" name="Mensaje" value="Hola! Me podrían dar más información!" required></input>
+                    <input type="text" name="Descuento" hidden value="20%">
                 </div>
                 <button type="submit" class="big__button form__button">ENVIAR</button>
             </form>
