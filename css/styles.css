@@ -69,7 +69,7 @@ button
    margin: auto;
 }
 
-.main{
+main{
    height: 100%;
    max-width: 100vw;
    flex-wrap: wrap;
@@ -606,6 +606,93 @@ a.discover {
     gap: .5rem;
 }
 /* End Footer settings */
+/* QR settings */
+.main__title {
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+}
+
+.game .main__paragraph {
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+}
+
+.game__buttons {
+    /* background-color: var(--purple); */
+    /* border-radius: 1rem; */
+    gap: 1rem;
+    /* flex-direction: column; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section.game__container {
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: unset;
+    padding-top: unset;
+}
+
+.game__buttons button {
+    background-color: var(--purple);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 800;
+    width: 7rem;
+    height: 7rem;
+}
+.game__buttons button.founded {
+    background-color: var(--yellow);
+    color: #000;
+}
+
+.game__buttons .inactive {
+    opacity: .5;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding-top: 100px; /* Location */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+    
+  }
+  
+.modal-content  
+{
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+}
+
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}   
+
+#modalText {
+    color: #000;
+}
+/* End QR settings */
 /* Keyframes settings */
 @keyframes slide {
     0% {transform: translateX(0)}
@@ -622,6 +709,4 @@ a.discover {
     .nav-icon {
         display: none !important;
     }
-
-
 }
