@@ -23,6 +23,6 @@ form.addEventListener('submit', e => {
             body: new FormData(form),
         })
         .then(response => alert("Gracias por tu mensaje! Nos pondremos en contacto contigo a la brevedad."))
-        // .then(() => { window.location.reload(); })
+        .then(() => { window.location.reload(); })
         .catch(error => console.error('Error!', error.message))
 })
