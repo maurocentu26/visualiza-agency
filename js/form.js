@@ -1,21 +1,28 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycby98wxK4rclI8Djz7behMRy8Wu_BaiGwIP2hQD58Zwk2OZYyEn58w1eV6bA7woeXPzB/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx4o-nbaZ0_7DorAXvup7pZpKx0PxMW0tyMPwuiBvTDbtDaVrWI06J2HinkXOqGIeGB/exec'
 
-const form = document.querySelector('form');
+const form = document.forms["form-submit"];
+
+console.log(form);
+
+console.log(new FormData(form))
 
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, {
-            mode: 'no-cors',
-            redirect: 'follow',
+            // mode: 'cors',
+            // credentials: 'same-origin',
+            // headers: {
+            //     "Access-Control-Allow-Origin": "*",
+            //     'Content-Type': 'application/x-www-form-urlencoded',
+            //     "Access-Control-Allow-Methods": "POST",
+            //     "Access-Control-Allow-Headers": "Content-Type, Authorization",
+                
+            // },
+            // redirect: 'follow',
             method: 'POST', 
             body: new FormData(form),
-            headers: {
-                "Access-Control-Allow-Origin": "*",
-                'Content-Type': 'application/x-www-form-urlencoded',
-                "Access-Control-Allow-Methods": "POST",
-            },
         })
-        .then(response => alert("Thank you! your form is submitted successfully." ))
-        .then(() => { window.location.reload(); })
+        .then(response => alert("Gracias por tu mensaje! Nos pondremos en contacto contigo a la brevedad."))
+        // .then(() => { window.location.reload(); })
         .catch(error => console.error('Error!', error.message))
 })
