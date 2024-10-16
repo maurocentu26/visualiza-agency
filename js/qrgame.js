@@ -6,8 +6,6 @@ const span = document.getElementsByClassName("close")[0];
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('qr');
 
-let thirdQrFounded = false;
-
 // Define storage keys for QR data and all-found flag
 const storageKey = 'foundQrs';
 
