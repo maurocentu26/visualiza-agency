@@ -31,7 +31,7 @@ function initGame() {
 
         const text = "Felicidades, encontraste el QR N° " + qrNumber + " y desbloqueaste la pista para el siguiente QR.";
         showModal(text);
-        updateFoundQrs(parseInt(qrNumber));
+        updateFoundQrs(qrNumber);
         buttons[qrNumber - 1].classList.add("founded");
         console.log(buttons[qrNumber]);
         if(qrNumber <= 4) {
@@ -51,7 +51,7 @@ function getFoundQrs() {
 function updateHTMLQr() {
     const foundQrs = getFoundQrs();
     foundQrs.forEach(qrNumber => {
-        if(qrNumber <= 4) {
+        if(qrNumber <= 4 && qrNumber >= 0) {
             buttons[qrNumber - 1].classList.add("founded");
             buttons[qrNumber].textContent = qrNumber + 1;
             buttons[qrNumber].classList.remove("inactive");
