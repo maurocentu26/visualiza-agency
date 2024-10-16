@@ -16,10 +16,6 @@ initGame();
 function initGame() {
     // Initial check for found QR based on URL param
     if (myParam !== null) {
-        if(myParam == 3 && !thirdQrFounded) {
-            const text = "Felicidades, por ser la primera persona en encontrar este código QR te ganaste una pizza totalmente gratuita.";
-            showModal(text);
-        }
         const text = "Felicidades, encontraste el QR N° " + myParam;
         showModal(text);
         updateFoundQrs(parseInt(myParam)); // Convert URL param to integer
