@@ -64,7 +64,7 @@ const textArr = [
 
 buttons.forEach((button, index) => {
   button.addEventListener('click', () => {
-    if (isFound(index + 1)) {
+    if (isFound(index + 1) || button.classList.contains("inactive")) {
       return; // Don't show modal for already found QR
     }
     showModal(textArr[index]);
